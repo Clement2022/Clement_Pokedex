@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Tiro+Gurmukhi&family=Tiro+Telugu&display=swap");
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: aqua;
+}
+
+h1 {
+  font-size: 200px;
+  font-family: "Tiro+Gurmukhi", sans-serif;
+  justify-content: center;
+}
+
+.card-shadow{
+ border-radius: 2px;
+
+}
+.btn{
+  width: 100%;
+  padding: 10px;
+}

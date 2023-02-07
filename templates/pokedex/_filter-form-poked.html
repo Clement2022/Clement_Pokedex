@@ -1,0 +1,28 @@
+{% load static %}
+
+<div class="col-12 col-md-3 mx-3 pt-4" style="width: 31.3vw;">
+  <form action="{% url 'pokedex_app:index' %}" method="POST" class="row gap-1">
+    <div class="card-shadow bg-dark">
+      <!-- POKEMON SEARCH TEXT INPUT -->
+      <div class="col-12 form-group bg-darck" style="height: 29vh">
+        <label for="pokemon-search" class="form-label">
+          {% comment %} <h3 class="h3 text-light text-center">Pokemon </h3> {% endcomment %}
+          <h3 class="text-light text-center mb-5 mt-3 MX-3">Search Pokemon by Name / Type</h3>
+          <input
+            type="text"
+            id="pokemon-search"
+            name="pokemon-search"
+            class="form-control"
+          />
+        </label>
+        <hr class="text-light" />
+      </div>
+      {% csrf_token %}
+
+      <div class="col-4  d-flex offset-6 justify-content-center mb-4">
+        <button type="submit" class="btn btn-success">Search</button>
+      </div>
+    </div>
+    <div class="card mt-3 shadow"></div>
+  </form>
+</div>
